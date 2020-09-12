@@ -76,3 +76,9 @@ export default () => (
 ```
 
 </details>
+
+### Endpoints
+
+- http://api.open-notify.org/iss-now.json
+- http://api.open-notify.org/iss-pass.json?lat=LAT&lon=LON
+- http://api.open-notify.org/astros.json
