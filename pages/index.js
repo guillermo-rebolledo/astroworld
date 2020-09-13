@@ -30,17 +30,23 @@ export default function Home({ astroCount, astroData }) {
           property="og:description"
           content="Fun facts about space and the ISS from NASA."
         />
-        <meta property="og:image" content="/astroworld.png" />
+        <meta
+          property="og:image"
+          content="https://astroworld.vercel.app/astroworld.png"
+        />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:url" content="https://astroworld.vercel.app/" />
         <meta property="twitter:title" content="🚀 Astroworld" />
         <meta
           property="twitter:description"
           content="Fun facts about space and the ISS from NASA."
         />
-        <meta property="twitter:image" content="/astroworld.png" />
+        <meta
+          property="twitter:image"
+          content="https://astroworld.vercel.app/astroworld.png"
+        />
       </Head>
       <Header>
         <span role="img" aria-label="star emoji">
