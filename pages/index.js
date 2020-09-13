@@ -36,15 +36,19 @@ export default function Home({ astroCount, astroData }) {
         />
 
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://astroworld.vercel.app/" />
-        <meta property="twitter:title" content="🚀 Astroworld" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@memorebolledo" />
+        <meta name="twitter:creator" content="@memorebolledo" />
         <meta
-          property="twitter:description"
+          name="twitter:title"
           content="Fun facts about space and the ISS from NASA."
         />
         <meta
-          property="twitter:image"
+          name="twitter:description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta
+          name="twitter:image"
           content="https://astroworld.vercel.app/astroworld.png"
         />
       </Head>

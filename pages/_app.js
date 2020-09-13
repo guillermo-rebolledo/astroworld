@@ -29,10 +29,45 @@ export default function App({ Component, pageProps }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        {/* Primary Meta Tags */}
+        <title>🚀 Astroworld</title>
+        <meta name="title" content="🚀 Astroworld" />
         <meta
           name="description"
           content="Fun facts about space and the ISS from NASA."
-        ></meta>
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://astroworld.vercel.app/" />
+        <meta property="og:title" content="🚀 Astroworld" />
+        <meta
+          property="og:description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta
+          property="og:image"
+          content="https://astroworld.vercel.app/astroworld.png"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@memorebolledo" />
+        <meta name="twitter:creator" content="@memorebolledo" />
+        <meta
+          name="twitter:title"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta
+          name="twitter:description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta
+          name="twitter:image"
+          content="https://astroworld.vercel.app/astroworld.png"
+        />
         <title>Astroworld</title>
         <link
           rel="icon"
