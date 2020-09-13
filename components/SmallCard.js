@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import { sm, md, lg, xl } from "../constants/breakpoints";
+import { exosphere } from "../constants/zIndices";
 
 const CardContent = styled.div`
   text-align: center;
   font-family: "Space Mono", monospace;
   font-weight: bold;
 
-  background: linear-gradient(135deg, #17ead9 0%, #6078ea 100%);
+  position: relative;
+  z-index: ${exosphere};
+
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
   color: white;
 
   border-radius: 8px;
@@ -53,6 +58,8 @@ export default function SmallCard({ children }) {
 
 const CardContainer = styled.div`
   padding: 8px 40px 8px 40px;
+  display: flex;
+  flex-direction: column;
 
   @media (${sm}) {
     padding: 16px 64px 16px 64px;

@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
 
     background-color: #121212;
   }
+
+  #__next {
+    overflow: hidden;
+  }
 `;
 
 const theme = {

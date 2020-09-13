@@ -1,13 +1,25 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
+import Header from "../components/Header";
 import MainCard from "../components/MainCard";
-import SmallCard from "../components/SmallCard";
+import { Card, CardAuthor, CardList } from "../components/CardStack";
+import Stars from "../components/Stars";
+import ISSPrediction from "../components/ISSPrediction";
 
 export default function Home({ astroCount, astroData }) {
   const suffix = astroCount === 1 ? "person" : "people";
 
   return (
     <>
+      <Header>
+        <span role="img" aria-label="star emoji">
+          🌟
+        </span>
+        Astroworld
+        <span role="img" aria-label="star emoji">
+          🌟
+        </span>
+      </Header>
+      <Stars />
       <MainCard>
         <span aria-label="astronaut emojis" role="img">
           👩‍🚀👨‍🚀🚀
@@ -16,14 +28,26 @@ export default function Home({ astroCount, astroData }) {
         There is currently {`${astroCount} ${suffix}`} in space right now.
       </MainCard>
 
-      {astroData.map((astronaut, index) => (
-        <SmallCard key={`astronaut-${index}`}>
-          <span aria-label="rocket emoji" role="img">
-            🚀&nbsp;
-          </span>
-          {astronaut.name} via {astronaut.craft}
-        </SmallCard>
-      ))}
+      <CardList>
+        {astroData.map((astronaut, index) => (
+          <Card key={`astronaut-${index}`}>
+            <header>
+              <h2>
+                {astronaut.name} via {astronaut.craft}
+              </h2>
+            </header>
+
+            <CardAuthor>
+              <span role="img" aria-label="rocket emoji">
+                🚀
+              </span>
+            </CardAuthor>
+          </Card>
+        ))}
+      </CardList>
+      <Stars />
+      <ISSPrediction />
+      <Stars />
     </>
   );
 }

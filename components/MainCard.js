@@ -1,15 +1,22 @@
 import styled from "styled-components";
 import { sm, md, lg, xl } from "../constants/breakpoints";
+import { exosphere } from "../constants/zIndices";
 
 const CardContent = styled.div`
   text-align: center;
   font-family: "Space Mono", monospace;
+  font-size: 1rem;
   font-weight: bold;
 
-  background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
   color: white;
 
   border-radius: 8px;
+  padding: 16px;
+
+  position: relative;
+  z-index: ${exosphere};
 
   transition: transform 0.2s ease-in-out;
 
@@ -18,28 +25,18 @@ const CardContent = styled.div`
   }
 
   /* properties that can change depending on screen size */
-
-  padding: 16px;
-  font-size: 12px;
-
   @media (${sm}) {
     padding: 32px;
-    font-size: 14px;
+    font-size: 1rem;
   }
 
   @media (${md}) {
     padding: 64px;
-    font-size: 18px;
+    font-size: 1.5rem;
   }
 
   @media (${lg}) {
     padding: 128px;
-    font-size: 24px;
-  }
-
-  @media (${xl}) {
-    padding: 256px;
-    font-size: 24px;
   }
 `;
 
