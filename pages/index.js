@@ -42,7 +42,6 @@ export default function Home({ astroCount, astroData }) {
         />
         <meta property="twitter:image" content="/astroworld.png" />
       </Head>
-      <img src="/astroworld.png" />
       <Header>
         <span role="img" aria-label="star emoji">
           🌟
