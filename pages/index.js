@@ -1,3 +1,4 @@
+import Head from "next/head";
 import PropTypes from "prop-types";
 import Header from "../components/Header";
 import MainCard from "../components/MainCard";
@@ -10,6 +11,38 @@ export default function Home({ astroCount, astroData }) {
 
   return (
     <>
+      <Head>
+        {/* Primary Meta Tags */}
+        <title>🚀 Astroworld</title>
+        <meta name="title" content="🚀 Astroworld" />
+        <meta
+          name="description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://astroworld.vercel.app/" />
+        <meta property="og:title" content="🚀 Astroworld" />
+        <meta
+          property="og:description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta property="og:image" content="/astroworld.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:title" content="🚀 Astroworld" />
+        <meta
+          property="twitter:description"
+          content="Fun facts about space and the ISS from NASA."
+        />
+        <meta property="twitter:image" content="/astroworld.png" />
+      </Head>
+      <img src="/astroworld.png" />
       <Header>
         <span role="img" aria-label="star emoji">
           🌟
